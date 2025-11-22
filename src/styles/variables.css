@@ -1,0 +1,36 @@
+:root {
+  /* UiPath Brand Colors */
+  --color-uipath-orange: #FA4616;
+  --color-uipath-orange-hover: #D4360E;
+  
+  /* Dark Theme Palette */
+  --color-bg-primary: #0F1115;
+  --color-bg-secondary: #1A1D23;
+  --color-bg-card: #242830;
+  
+  /* Text Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+  --color-text-muted: #71717A;
+  
+  /* Accents */
+  --color-accent-blue: #3B82F6;
+  --color-accent-purple: #8B5CF6;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
