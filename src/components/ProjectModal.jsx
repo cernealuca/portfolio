@@ -85,7 +85,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
                         <div>
-                            <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: 'white' }}>The Problem</h3>
+                            <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: 'white' }}>The Challenge</h3>
                             <p style={{ color: 'var(--color-text-secondary)' }}>{project.details.problem}</p>
                         </div>
                         <div>

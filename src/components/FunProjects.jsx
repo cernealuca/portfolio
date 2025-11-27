@@ -41,7 +41,8 @@ const FunProjects = () => {
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))',
-                    gap: '2rem'
+                    gap: '2rem',
+                    alignItems: 'stretch'
                 }}>
                     {funProjects.map((project, index) => (
                         <motion.div
@@ -57,7 +58,9 @@ const FunProjects = () => {
                                 borderRadius: 'var(--radius-lg)',
                                 border: '1px solid rgba(250, 70, 22, 0.2)',
                                 transition: 'all 0.3s',
-                                overflow: 'hidden'
+                                overflow: 'hidden',
+                                display: 'flex',
+                                flexDirection: 'column'
                             }}
                         >
                             <div style={{
@@ -69,7 +72,8 @@ const FunProjects = () => {
                                 backgroundColor: 'var(--color-bg-secondary)',
                                 display: 'flex',
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
+                                flexShrink: 0
                             }}>
                                 <img
                                     src={project.image}
@@ -87,7 +91,8 @@ const FunProjects = () => {
                                 display: 'flex',
                                 justifyContent: 'space-between',
                                 alignItems: 'flex-start',
-                                marginBottom: '1.5rem'
+                                marginBottom: '1.5rem',
+                                flexShrink: 0
                             }}>
                                 <h3 style={{
                                     fontSize: '1.5rem',
@@ -111,12 +116,13 @@ const FunProjects = () => {
                             <p style={{
                                 color: 'var(--color-text-secondary)',
                                 marginBottom: '1.5rem',
-                                lineHeight: '1.6'
+                                lineHeight: '1.6',
+                                flex: '1'
                             }}>
                                 {project.description}
                             </p>
 
-                            <div style={{ marginBottom: '1.5rem' }}>
+                            <div style={{ marginBottom: '1.5rem', flexShrink: 0 }}>
                                 <div style={{
                                     display: 'flex',
                                     flexWrap: 'wrap',
@@ -144,7 +150,9 @@ const FunProjects = () => {
                                 display: 'flex',
                                 gap: '1rem',
                                 paddingTop: '1rem',
-                                borderTop: '1px solid rgba(255,255,255,0.05)'
+                                borderTop: '1px solid rgba(255,255,255,0.05)',
+                                marginTop: 'auto',
+                                flexShrink: 0
                             }}>
                                 {project.icons.map((Icon, idx) => (
                                     <Icon
